@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<view class='moveDetail'>
+  <view class='image'>
+    <image src='{{detail.images.medium}}' mode='aspectFill'></image>
+  </view>
+  <view class='movie-info'>
+  <text>{{detail.title}}</text>
+  <view class='genres'>分类:<text wx:for="{{detail.genres}}" wx:key="index">{{item}}</text></view>
+  <text>评分：{{detail.rating.average}}</text>
+  <view>上映年份：{{detail.year}}</view>
+  <view class="pingfen">
+    <view class="star-before">★★★★★</view>
+    <view class="star-after" style="width:{{detail.rating.average*10}}%">★★★★★</view> 
+  </view>
+  </view>
+  <view class='divider'></view>
+  <view class='director'>
+    <text>导演:</text>
+    <view class='casts'>
+      <view  wx:for="{{detail.directors}}" wx:key="index">
+        <image src='{{item.avatars.small}}' mode='aspectFill' class='p_image'></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='divider'></view>
+  <view class='casts-info'>
+    <text>主演：</text>
+    <view class='casts'>
+      <view wx:for="{{detail.casts}}" wx:key="index">
+        <image src='{{item.avatars.small}}' mode='aspectFill' class='p_image'></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='divider'></view>
+</view>

@@ -1,0 +1,66 @@
+/* pages/detail/detail.wxss */
+.moveDetail{
+  box-sizing: border-box;
+  text-align: center;
+}
+.moveDetail .image{
+  margin-top:20rpx;
+  text-align: center;
+  font-size: 18px;
+}
+.moveDetail .image image{
+  width:440rpx; 
+  height:550rpx;
+  margin-bottom: 10rpx;
+}
+.moveDetail text{
+  text-align: center;
+  margin:20rpx;
+}
+.casts-info{
+  font-size: 16px;
+  width:96%;
+  margin:20rpx 2%;
+}
+.casts{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.casts>view{
+  width:33%;
+  padding:5rpx;
+  font-size: 14px;
+  color:#666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.genres{
+  color:#333;
+  font-size: 16px;
+}
+.p_image{
+  width:220rpx;
+  height:300rpx;
+}
+.director>text{
+  font-size:15px
+}
+.movie-info{
+  position: relative;
+  height:170rpx;
+  font-size: 15px;
+  color:#333;
+}
+.pingfen{
+  position:absolute;
+  bottom:42rpx;
+  left:50%;
+}
+.movie-info>text:nth-child(1){
+  font-size:18px;
+  font-weight: bold;
+}
+.movie-info>text:nth-child(3){
+  margin-left:-120rpx;
+}

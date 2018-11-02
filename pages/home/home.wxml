@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view class="slider">
+  <swiper autoplay interval='3500' indicator-dots>
+    <swiper-item wx:for="{{img}}" wx:key="id">
+      <!--mode="aspectFill" 等比例缩放-->
+      <image src="{{item.img_url}}" mode="aspectFill" width="375" height="150"></image>
+    </swiper-item>
+  </swiper>
+</view>

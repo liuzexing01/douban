@@ -1,0 +1,22 @@
+<!--pages/movie/movie.wxml-->
+<view class='paixu'>分类排序:
+  <view bindtap='timeup' class="{{num == 1?'on':'out'}}">按时间↑</view>
+  <view bindtap='timedown' class="{{num == 2?'on':'out'}}">按时间↓</view>
+  <view bindtap='pup' class="{{num == 3?'on':'out'}}">按评分↑</view>
+  <view bindtap='pdown' class="{{num == 4?'on':'out'}}">按评分↓</view>
+</view>
+<block wx:for="{{list}}" wx:key="index">
+  <view class="num">
+    <view class='line'></view>
+    <view class='number'>{{index+1}}</view>
+    <view class='line'></view>
+  </view>
+    <view class="movie" bindtap='jumpDetail' data-index='{{index}}'>
+      <view class="pic">
+        <image mode="aspectFit" src="{{item.images.medium}}" mode='aspectFill' lazy-load></image>
+      </view>
+      <view class="movie-info">
+          <text>{{item.text}}</text>
+      </view>
+    </view>
+</block>

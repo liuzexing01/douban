@@ -1,0 +1,14 @@
+/* pages/member/member.wxss */
+.avatar{
+  height:400rpx;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar image{
+  width:200rpx;
+  height:200rpx;
+  border:3rpx solid rgba(0,0,0,0.2);
+  border-radius:50%;
+}

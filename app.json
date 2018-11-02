@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/movie/movie",
+    "pages/detail/detail",
+    "pages/member/member",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#282828",
+    "navigationBarTitleText": "小程序-豆瓣电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#fff",
+    "selectedColor": "#fc0",
+    "backgroundColor": "#2b2b2b",
+    "borderStyle": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabs/yingyuan.png",
+        "selectedIconPath": "assets/tabs/yingyuan-on.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "分类",
+        "iconPath": "assets/tabs/shangyin.png",
+        "selectedIconPath": "assets/tabs/shangyin-on.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "assets/tabs/me.png",
+        "selectedIconPath": "assets/tabs/me-on.png"
+      }
+    ]
+  }
+}

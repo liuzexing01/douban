@@ -1,0 +1,55 @@
+/* pages/movie/movie.wxss */
+.movie{
+  width:94%;
+  margin:20rpx 3%;
+  border:1px solid #ddd;
+  box-shadow: 5rpx 5rpx 8rpx rgba(0,0,0,0.1);
+  display:flex;
+}
+.movie .pic image{
+  margin:10rpx;
+  width:200rpx;
+  height:275rpx;
+}
+.movie .movie-info{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color:#666;
+  margin-left:10rpx;
+}
+.num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+  text-align: center;
+  font-size:18px;
+  color:rgba(146, 111, 83, 0.562);
+  width:50rpx;
+}
+.line{
+  display: inline-block;  
+  width: 100rpx; 
+  border-top: 1px solid  #ccc ;
+  height: 1rpx; 
+}
+.paixu{
+  display: flex;
+  padding:20rpx 10rpx;
+  font-size: 17px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.out{
+  padding:0 5rpx;
+  color: #999;
+}
+.on{
+  padding:0 5rpx;
+  color: rgba(21, 153, 230, 0.685);
+}
+.active{
+  color:rgb(77, 165, 177);
+}

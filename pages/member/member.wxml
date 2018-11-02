@@ -1,0 +1,39 @@
+<!--pages/member/member.wxml-->
+<!--头像-->
+<view class="avatar">
+  <image src="/assets/img/avatar.png" mode="aspectFill" lazy-load></image>
+</view>
+<!--灰色分隔快-->
+<view class="divider"></view>
+<!--个人资料-->
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>个人资料</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的影单</text>
+  </navigator>
+</view>
+<view class="divider"></view>
+<!--常见问题-->
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>我的电影票</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的兑换券</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的优惠券</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>兑换优惠券</text>
+  </navigator>
+</view>
+<!--设置-->
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>设置</text>
+  </navigator>
+</view>
