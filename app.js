@@ -51,7 +51,8 @@ App({
   },
   globalData: {
     userInfo:null,
-    movies:[]
+    movies:[],
+    newMovies:[]
   },
   /**
    * 

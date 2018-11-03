@@ -1,0 +1,11 @@
+<!--pages/more/more.wxml-->
+<view class="content">
+<view class='movies' wx:for="{{movies}}" wx:key="index" bindtap='jumpDetail'  data-index='{{index}}'>
+  <image src="{{item.images.medium}}" mode="aspectFill" width="375" height="150"></image>
+  <view class='mtitle'>{{item.title}}</view>
+  <view>
+    <text wx:for="{{item.genres}}" wx:for-item="items" wx:key="{{item.genres.id}}" class='leibie'>{{items}}</text>
+  </view>
+  <view class='pinfen'>{{item.rating.average}}</view>
+</view>
+</view> 

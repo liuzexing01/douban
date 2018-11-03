@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
+<!-- 三张我最喜欢的电影的海报做轮播 -->
 <view class="slider">
   <swiper autoplay interval='3500' indicator-dots>
     <swiper-item wx:for="{{img}}" wx:key="id">
@@ -7,3 +8,37 @@
     </swiper-item>
   </swiper>
 </view>
+<view class='search'>
+  <input placeholder='请输入片名/演员' bindinput ="movieInput" name="search"></input>
+  <button bindtap='searchMovie'>搜索</button>
+</view>
+<navigator url="/pages/more/more?id=1" class="title arrow">
+  正在热映
+</navigator>
+<scroll-view scroll-x="true"> 
+<view class="content" scroll-x="true">
+<view class='movies' wx:for="{{newMovies}}" wx:key="index" wx:if="{{index<=6}}"  bindtap='jumpDetail'  data-index='{{index}}'>
+  <image src="{{item.images.medium}}" mode="aspectFill" width="375" height="150"></image>
+  <view class='mtitle'>{{item.title}}</view>
+  <view>
+    <text wx:for="{{item.genres}}" wx:for-item="items" wx:key="{{item.genres.id}}" class='leibie'>{{items}}</text>
+  </view>
+  <view class='pinfen'>{{item.rating.average}}</view>
+</view>
+</view> 
+</scroll-view>
+<navigator url="/pages/more/more?id=2" class="title arrow">
+  经典影片
+</navigator>
+<scroll-view scroll-x="true"> 
+<view class="content" scroll-x="true">
+<view class='movies' wx:for="{{movies}}" wx:key="index" wx:if="{{index<=6}}"  bindtap='jumpDetail2'  data-index='{{index}}'>
+  <image src="{{item.images.medium}}" mode="aspectFill" width="375" height="150"></image>
+  <view class='mtitle'>{{item.title}}</view>
+  <view>
+    <text wx:for="{{item.genres}}" wx:for-item="items" wx:key="{{item.genres.id}}" class='leibie'>{{items}}</text>
+  </view>
+  <view class='pinfen'>{{item.rating.average}}</view>
+</view>
+</view> 
+</scroll-view>

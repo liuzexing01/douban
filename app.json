@@ -4,9 +4,10 @@
     "pages/movie/movie",
     "pages/detail/detail",
     "pages/member/member",
-    
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/more/more",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

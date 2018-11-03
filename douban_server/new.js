@@ -13,7 +13,7 @@ var content = qs.stringify(data);
 var options = {
   hostname: 'api.douban.com',
   port: 443,
-  path: '/v2/movie/top250?'+content,
+  path: '/v2/movie/in_theaters?'+content,
   method: 'GET',	
 };
 
@@ -42,7 +42,7 @@ http.createServer((req,res)=>{
 			res.write(JSON.stringify(arr))
 			res.end()
 	}
-}).listen(3000)
+}).listen(3002)
 
 //请求失败
 req.on('error', (e) => {

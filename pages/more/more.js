@@ -1,35 +1,44 @@
-// pages/detail/detail.js
+// pages/more/more.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    detail: {}
+    movies:[],
+    id:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var movieDetail = JSON.parse(options.movieDetail);
     this.setData({
-      detail : movieDetail
+      id:options.id
     })
+   
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    if (this.data.id == 1) {
+      this.setData({
+        movies: getApp().globalData.newMovies
+      })
+    } else {
+      this.setData({
+        movies: getApp().globalData.movies
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

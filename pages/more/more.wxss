@@ -1,0 +1,43 @@
+/* pages/more/more.wxss */
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.movies {
+  width:48%;
+  box-sizing: border-box;
+  margin:20rpx 1%;
+  padding:10rpx;
+  overflow: hidden;
+  position:relative;
+}
+.movies image{
+  width:335rpx;
+  border-radius: 20rpx;
+}
+.movies .mtitle{
+  font-size: 16px;
+  color:#333;
+}
+.movies .leibie{
+  border:1px solid #666;
+  border-radius: 10rpx;
+  margin:5rpx 10rpx;
+  font-size: 12px;
+  padding:0 5rpx;
+  color:#666;
+}
+.movies .pinfen{
+  position:absolute;
+  bottom:115rpx;
+  right:16rpx;
+  background:rgba(0,0,0,0.5);
+  width:86%;
+  text-align: right;
+  padding-right: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  font-size: 15px;
+  color:white;
+}
