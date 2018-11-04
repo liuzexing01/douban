@@ -9,7 +9,7 @@
   </swiper>
 </view>
 <view class='search'>
-  <input placeholder='请输入片名/演员' bindinput ="movieInput" name="search"></input>
+  <input placeholder='请输入片名' bindinput ="movieInput" name="search"></input>
   <button bindtap='searchMovie'>搜索</button>
 </view>
 <navigator url="/pages/more/more?id=1" class="title arrow">

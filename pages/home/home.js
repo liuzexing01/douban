@@ -72,7 +72,10 @@ Page({
         searchMovie.push(m)
       }
     }
-    console.log(searchMovie)
+    searchMovie = JSON.stringify(searchMovie)
+    wx.navigateTo({
+      url: '../search/search?movie=' + searchMovie,
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

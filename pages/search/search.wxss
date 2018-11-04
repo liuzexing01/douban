@@ -1,1 +1,37 @@
 /* pages/search/search.wxss */
+.movie{
+  width:94%;
+  margin:20rpx 3%;
+  border:1px solid #ddd;
+  box-shadow: 5rpx 5rpx 8rpx rgba(0,0,0,0.1);
+  display:flex;
+}
+.movie .pic image{
+  margin:10rpx;
+  width:200rpx;
+  height:275rpx;
+}
+.movie .movie-info{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color:#666;
+  margin-left:10rpx;
+}
+.num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+  text-align: center;
+  font-size:18px;
+  color:rgba(146, 111, 83, 0.562);
+  width:50rpx;
+}
+.line{
+  display: inline-block;  
+  width: 100rpx; 
+  border-top: 1px solid  #ccc ;
+  height: 1rpx; 
+}

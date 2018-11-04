@@ -1,2 +1,17 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<block wx:for="{{movie}}" wx:key="index" wx:if="movie!=''">
+  <view class="num">
+    <view class='line'></view>
+    <view class='number'>{{index+1}}</view>
+    <view class='line'></view>
+  </view>
+    <view class="movie" bindtap='jumpDetail' data-index='{{index}}'>
+      <view class="pic">
+        <image mode="aspectFit" src="{{item.images.medium}}" mode='aspectFill' lazy-load></image>
+      </view>
+      <view class="movie-info">
+          <text>{{item.text}}</text>
+      </view>
+    </view>
+</block>
+<view wx:if="movie==''">未搜索到相关影片，请输入详细名称</view>
